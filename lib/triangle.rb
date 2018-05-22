@@ -17,7 +17,9 @@ class Triangle
   #It's calling .kind on the return value of Triangle.new which is an object
 
   def kind
+    #The Triangle Inequality Theorem states that the sum of any 2 sides of a triangle must be greater than the measure of the third side.
     raise TriangleError if @a_side <= 0 || @b_side <= 0 || @c_side <= 0
+    raise TriangleError if @a_side + @b_side <= @c_side
     if @a_side == @b_side && @b_side == @c_side
       :equilateral
     elsif @a_side == @b_side || @a_side == @c_side || @b_side == @c_side

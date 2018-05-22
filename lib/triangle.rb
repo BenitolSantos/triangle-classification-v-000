@@ -2,13 +2,14 @@ class Triangle
   # write code here
   attr_accessor :a_side, :b_side, :c_side, :type
 
+#mass assignment is when you have a method that takes a HASH as an argument.
   def initialize(a_side:,b_side:,c_side:)
     @a_side = a_side
     @b_side = b_side
     @c_side = c_side
   end
 
-  #That's actually a valid way to call a method.. 
+  #That's actually a valid way to call a method..
   #It's calling .kind on the return value of Triangle.new which is an object
 
   def kind

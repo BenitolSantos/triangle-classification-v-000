@@ -1,9 +1,11 @@
 class Triangle
   # write code here
-  attr_accessor :Aside, :Bside, :Cside
+  attr_accessor :a_side, :b_side, :c_side
 
-  def initialize(Aside:,Bside:,Cside:)
-    @Aside = Aside:
+  def initialize(a_side:,b_side:,c_side:)
+    @a_side = a_side
+    @b_side = b_side
+    @c_side = c_side
   end
 
   class TriangleError < StandardError

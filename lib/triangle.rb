@@ -23,7 +23,7 @@ class Triangle
     :isosceles
   elsif @a_side != @b_side && @b_side != @c_side && @a_side != @c_side
     :scalene
-  elsif
+  elsif @a_side <= 0 || @b_side <= 0 || @c_side <= 0
     raise TriangleError
   end
 

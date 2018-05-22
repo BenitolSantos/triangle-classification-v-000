@@ -11,6 +11,8 @@ class Triangle
   def kind
     @type = :equilateral if @a_side == @b_side && @b_side == @c_side
     @type = :isosceles if @a_side == @b_side && @b_side != @c_side
+    @type = :isosceles if @a_side != @b_side && @a_side == @c_side
+    @type = :isosceles if @a_side != @b_side && @b_side == @c_side
   end
 
   class TriangleError < StandardError

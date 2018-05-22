@@ -6,6 +6,7 @@ class Triangle
     @a_side = a_side
     @b_side = b_side
     @c_side = c_side
+    kind
   end
 
   def kind

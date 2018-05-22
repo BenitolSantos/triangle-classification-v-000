@@ -24,8 +24,7 @@ class Triangle
   elsif @a_side != @b_side && @b_side != @c_side && @a_side != @c_side
     :scalene
   else
-    raise TriangleError if @a_side <= 0 || @b_side <= 0 || @c_side <= 0
-    @type
+    raise TriangleError 
   end
 
   class TriangleError < StandardError

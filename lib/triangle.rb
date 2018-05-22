@@ -8,6 +8,9 @@ class Triangle
     @c_side = c_side
   end
 
+  #That's actually a valid way to call a method.. 
+  #It's calling .kind on the return value of Triangle.new which is an object
+
   def kind
     @type = :equilateral if @a_side == @b_side && @b_side == @c_side
     @type = :isosceles if @a_side == @b_side && @b_side != @c_side

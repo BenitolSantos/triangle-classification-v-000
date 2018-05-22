@@ -18,6 +18,7 @@ class Triangle
 
   def kind
     raise TriangleError if @a_side <= 0 || @b_side <= 0 || @c_side <= 0
+    raise TriangleError if @a_size*@a_size + @b_side*@b_size != @c_size*@c_size
     if @a_side == @b_side && @b_side == @c_side
       :equilateral
     elsif @a_side == @b_side || @a_side == @c_side || @b_side == @c_side

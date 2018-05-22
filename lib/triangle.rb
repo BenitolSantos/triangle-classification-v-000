@@ -3,6 +3,7 @@ class Triangle
   attr_accessor :a_side, :b_side, :c_side, :type
 
 #mass assignment is when you have a method that takes a HASH as an argument.
+#so it has a value.
   def initialize(a_side:,b_side:,c_side:)
     @a_side = a_side
     @b_side = b_side

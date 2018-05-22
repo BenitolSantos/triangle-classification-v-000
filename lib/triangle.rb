@@ -2,6 +2,6 @@ class Triangle
   # write code here
 end
 
-  class TriangleError
+  class TriangleError < StandardError
 
   end

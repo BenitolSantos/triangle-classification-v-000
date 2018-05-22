@@ -17,11 +17,13 @@ class Triangle
   #It's calling .kind on the return value of Triangle.new which is an object
 
   def kind
-    @type = :equilateral if @a_side == @b_side && @b_side == @c_side
-    @type = :isosceles if @a_side == @b_side #no need for an extra comparison
-    @type = :isosceles if @a_side == @c_side
-    @type = :isosceles if @b_side == @c_side
-    @type = :scalene if @a_side != @b_side && @b_side != @c_side && @a_side != @c_side
+  if @a_side == @b_side && @b_side == @c_side
+    :equilateral
+  elsif @a_side == @b_side || @a_side == @c_side || @b_side == @c_side
+    :isosceles
+  elsif @a_side != @b_side && @b_side != @c_side && @a_side != @c_side
+    :scalene
+  else
     raise TriangleError if @a_side <= 0 || @b_side <= 0 || @c_side <= 0
     @type
   end

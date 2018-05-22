@@ -23,8 +23,8 @@ class Triangle
     :isosceles
   elsif @a_side != @b_side && @b_side != @c_side && @a_side != @c_side
     :scalene
-  else
-    raise TriangleError 
+  elsif
+    raise TriangleError
   end
 
   class TriangleError < StandardError

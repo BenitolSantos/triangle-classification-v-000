@@ -8,7 +8,7 @@ class Triangle
     @c_side = c_side
   end
 
-  def kind
+  def self.kind
     if @a_side == @b_side && @b_side == @c_side
   end
 

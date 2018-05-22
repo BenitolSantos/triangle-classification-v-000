@@ -7,8 +7,8 @@ class Triangle
 #its mass assignment if we are iterate over the various keys and values
 #more notes in spec
 #keyword arguments won't work because they aren't hashes
-  def initialize(a_side,b_side,c_side)
-    @a_side = a_side
+  def initialize(a_side,b_side,c_side) #mass assignment meant to see the values passed in
+    @a_side = a_side #^ better for default arguments or options
     @b_side = b_side
     @c_side = c_side
   end

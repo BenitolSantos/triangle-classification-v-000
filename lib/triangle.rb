@@ -8,8 +8,9 @@ class Triangle
     @c_side = c_side
   end
 
-  def self.kind
-    if @a_side == @b_side && @b_side == @c_side
+  def kind
+    @type = :equilateral if @a_side == @b_side && @b_side == @c_side
+    @type = :isosceles if @a_side == @b_side && @b_side != @c_side
   end
 
   class TriangleError < StandardError

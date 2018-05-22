@@ -6,7 +6,7 @@ class Triangle
 #so it has a value.
 #its mass assignment if we are iterate over the various keys and values
 #more notes in spec
-  def initialize(a_side:,b_side:,c_side:)
+  def initialize(a_side,b_side,c_side)
     @a_side = a_side
     @b_side = b_side
     @c_side = c_side

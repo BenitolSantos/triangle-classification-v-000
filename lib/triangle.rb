@@ -28,7 +28,7 @@ class Triangle
 
   class TriangleError < StandardError
     def message
-      "THIS TRIANGLE DOODOO WHAT DO YOU MEAN"
+      "THIS TRIANGLE IS AWFUL WHAT ARE YOU DOING"
     end
   end
 end

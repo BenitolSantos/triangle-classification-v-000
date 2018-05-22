@@ -22,6 +22,7 @@ class Triangle
     @type = :isosceles if @a_side != @b_side && @a_side == @c_side
     @type = :isosceles if @a_side != @b_side && @b_side == @c_side
     @type = :scalene if @a_side != @b_side && @b_side != @c_side
+    @type
   end
 
   class TriangleError < StandardError

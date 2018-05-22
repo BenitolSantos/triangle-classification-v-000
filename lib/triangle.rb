@@ -18,9 +18,9 @@ class Triangle
 
   def kind
     @type = :equilateral if @a_side == @b_side && @b_side == @c_side
-    @type = :isosceles if @a_side == @b_side && @b_side != @c_side
-    @type = :isosceles if @a_side != @b_side && @a_side == @c_side
-    @type = :isosceles if @a_side != @b_side && @b_side == @c_side
+    @type = :isosceles if @a_side == @b_side
+    @type = :isosceles if @a_side == @c_side
+    @type = :isosceles if @b_side == @c_side
     @type = :scalene if @a_side != @b_side && @b_side != @c_side && @a_side != @c_side
     raise TriangleError if @a_side <= 0 || @b_side <= 0 || @c_side <= 0
     @type
